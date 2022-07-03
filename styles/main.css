@@ -79,8 +79,12 @@ ul {
 }
 
 .header__logo-link {
-    display: block;
+    display: inline-block;
     height: 48px;
+}
+
+.header__logo-link img{
+    vertical-align: middle;
 }
 
 .header__logo-link:focus {
