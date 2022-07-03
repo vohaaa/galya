@@ -75,7 +75,7 @@ ul {
     justify-content: space-between;
     align-items: center;
     padding: 16px 0;
-    max-height: 70px;
+    min-height: 70px;
 }
 
 .header__logo-link {
@@ -297,9 +297,15 @@ ul {
         flex: 0 0 33.33%;
         max-width: 33.33%;
     }
+    /* .main__phones-wrapper {
+        margin-right: -70px;
+    } */
 }
 
 @media screen and (max-width: 811px) {
+    .main__phones-wrapper {
+        margin-right: -70px;
+    }
     .main__phones-element {
         flex: 0 0 50%;
         max-width: 50%;
@@ -307,6 +313,13 @@ ul {
 }
 
 @media screen and (max-width: 546px) {
+    .contacts {
+        display: flex;
+        flex-direction: column;
+    }
+    .contacts__phone {
+        margin-bottom: 5px;
+    }
     .main__phones-element {
         flex: 0 0 100%;
         max-width: 100%;
